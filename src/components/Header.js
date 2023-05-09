@@ -11,8 +11,8 @@ function Header() {
             <li>
               <NavLink
                 to="/"
-                className="text-gray-600 hover:text-gray-800"
-                activeClassName="text-gray-800 font-medium"
+                className="text-gray-600 hover:text-gray-800 transition-colors"
+                activeClassName="text-gray-800 font-medium border-b-2 border-gray-800"
               >
                 Home
               </NavLink>
@@ -20,8 +20,8 @@ function Header() {
             <li>
               <NavLink
                 to="/about"
-                className="text-gray-600 hover:text-gray-800"
-                activeClassName="text-gray-800 font-medium"
+                className="text-gray-600 hover:text-gray-800 transition-colors"
+                activeClassName="text-gray-800 font-medium border-b-2 border-gray-800"
               >
                 About
               </NavLink>
@@ -29,8 +29,8 @@ function Header() {
             <li>
               <NavLink
                 to="/projects"
-                className="text-gray-600 hover:text-gray-800"
-                activeClassName="text-gray-800 font-medium"
+                className="text-gray-600 hover:text-gray-800 transition-colors"
+                activeClassName="text-gray-800 font-medium border-b-2 border-gray-800"
               >
                 Projects
               </NavLink>
@@ -38,8 +38,8 @@ function Header() {
             <li>
               <NavLink
                 to="/contact"
-                className="text-gray-600 hover:text-gray-800"
-                activeClassName="text-gray-800 font-medium"
+                className="text-gray-600 hover:text-gray-800 transition-colors"
+                activeClassName="text-gray-800 font-medium border-b-2 border-gray-800"
               >
                 Contact
               </NavLink>

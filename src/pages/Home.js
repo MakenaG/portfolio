@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -6,11 +7,11 @@ function Home() {
     <div className="container mx-auto px-4 py-8">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-gray-800">
-          Hi, I'm John Doe 👋
+          Hi, I'm Glory Makena 👋
         </h1>
         <p className="text-xl text-gray-600 mt-4">
-          I'm a full stack developer with 5 years of experience in building
-          modern web applications using React, Node.js, MongoDB and more.
+          I'm a full stack developer with  experience in building
+          modern web applications using React, Node.js, Ruby and more.
         </p>
         <Link
           to="/projects"
