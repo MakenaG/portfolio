@@ -6,7 +6,7 @@ function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex items-center justify-center">
           <img
-            src="https://via.placeholder.com/300x300"
+            src="https://media.licdn.com/dms/image/D4D03AQGZV-bl0nzdSw/profile-displayphoto-shrink_800_800/0/1671305359599?e=1689206400&v=beta&t=POPTfn6bhZbmG7EqO2ugnfJzQnwciKC7-J1aAOPfXPs"
             alt="Profile"
             className="w-64 h-64 rounded-full border-4 border-white shadow-lg"
           />
