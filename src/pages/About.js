@@ -28,12 +28,10 @@ function About() {
           <ul className="list-disc list-inside text-gray-600 mt-4">
             <li>React</li>
             <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>Express</li>
+            <li>Ruby</li>
+            <li>Javascript</li>
             <li>Tailwind</li>
             <li>Git</li>
-            <li>RESTful APIs</li>
-            <li>GraphQL</li>
           </ul>
         </div>
       </div>
