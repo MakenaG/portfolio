@@ -1,127 +1,56 @@
-import React, { useState } from "react";
+import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function Contact() {
-  // You can use your own state management or form library
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [errors, setErrors] = useState({});
-  const [submitted, setSubmitted] = useState(false);
-
-  // You can use your own validation logic or library
-  const validate = () => {
-    let errors = {};
-    let isValid = true;
-
-    if (!name) {
-      errors.name = "Name is required";
-      isValid = false;
-    }
-
-    if (!email) {
-      errors.email = "Email is required";
-      isValid = false;
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errors.email = "Email is invalid";
-      isValid = false;
-    }
-
-    if (!message) {
-      errors.message = "Message is required";
-      isValid = false;
-    }
-
-    setErrors(errors);
-    return isValid;
-  };
-
-  // You can use your own submission logic or library
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validate()) {
-      // Send the data to an API or a backend service
-      console.log({ name, email, message });
-      // Reset the form fields
-      setName("");
-      setEmail("");
-      setMessage("");
-      // Show a success message
-      setSubmitted(true);
-    }
-  };
-
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-gray-800">Contact me</h2>
-      <p className="text-gray-600 mt-4">
-        If you have any questions or feedback, feel free to contact me using the
-        form below. I'll get back to you as soon as possible.
-      </p>
-      {submitted && (
-        <div className="bg-green-100 border border-green-300 text-green-700 px-4 py-3 rounded-lg mt-4">
-          Your message has been sent successfully. Thank you!
+    <div className="container mx-auto px-4 py-12 bg-gray-100">
+      <h1 className="text-4xl font-bold text-center mb-8">Contact Me</h1>
+      <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="md:w-1/2 md:mr-4">
+          <img
+            src="https://media.licdn.com/dms/image/D4D03AQGZV-bl0nzdSw/profile-displayphoto-shrink_800_800/0/1671305359599?e=1689206400&v=beta&t=POPTfn6bhZbmG7EqO2ugnfJzQnwciKC7-J1aAOPfXPs"
+            alt="Your photo"
+            className="rounded-full w-64 h-64 mx-auto shadow-lg"
+          />
         </div>
-      )}
-      <form onSubmit={handleSubmit} className="mt-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label htmlFor="name" className="block text-gray-600 font-medium">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="w-full border border-gray-300 px-4 py-2 rounded-lg mt-2 focus:outline-none focus:ring-blue-600 focus:border-blue-600"
-            />
-            {errors.name && (
-              <div className="text-red-600 mt-1">{errors.name}</div>
-            )}
-          </div>
-          <div>
-            <label htmlFor="email" className="block text-gray-600 font-medium">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full border border-gray-300 px-4 py-2 rounded-lg mt-2 focus:outline-none focus:ring-blue-600 focus:border-blue-600"
-            />
-            {errors.email && (
-              <div className="text-red-600 mt-1">{errors.email}</div>
-            )}
-          </div>
-        </div>
-        <div className="mt-4">
-          <label htmlFor="message" className="block text-gray-600 font-medium">
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            rows={6}
-            className="w-full border border-gray-300 px-4 py-2 rounded-lg mt-2 focus:outline-none focus:ring-blue-600 focus:border-blue-600"
-          ></textarea>
-          {errors.message && (
-            <div className="text-red-600 mt-1">{errors.message}</div>
-          )}
-        </div>
-        <button
-          type="submit"
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg mt-8 hover:bg-blue-700"
-        >
-          Send message
-        </button>
-      </form>
-      </div>
+        <div className="md:w-1/2 md:ml-4">
+          <p className="text-xl text-gray-700 mb-4">
+            Hi, I'm Glory Makena, a web developer and designer based in Nairobi,
+            Kenya. I love creating beautiful and functional websites using
+            modern technologies and frameworks.
+          </p>
+          <p className="text-xl text-gray-700 mb-4">
+            If you want to work with me or just say hi, feel free to contact me
+            using the following details:
+          </p>
+          <ul className="text-xl text-gray-700 mb-4 space-y-2">
+           
+            <li>
+              <span className="font-bold">Email:</span>{" "}
+              <a
+                href="mailto:makenaglory44@gmail.com"
+                className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-200"
+              >
+                makenaglory44@gmail.com
+              </a>
+            </li>
+            <li>
 
+            </li>
+            <li>
+              <span className="font-bold">WhatsApp:</span>{" "}
+              <a
+                href="https://wa.me/254701630746"
+                className="bg-green-500 text-white px-2 py-1 rounded hover:bg-green-50"
+              >
+                +254701630746
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
-          }
+}
+
 export default Contact;

@@ -1,14 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
 function Header() {
   return (
-    <header className="bg-white shadow-lg">
+    <header className="sticky top-0 z-30 w-full px-2 py-4 bg-white sm:px-4bg-white shadow-lg ">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="text-xl font-bold text-gray-800">My Portfolio</div>
+        <div className="text-xl font-bold text-gray-800">
+          <NavLink to="/" className="text-gray-800 hover:text-gray-600 transition-colors">My Portfolio</NavLink>
+        </div>
         <nav>
           <ul className="flex space-x-4">
-            <li>
+          <li>
               <NavLink
                 to="/"
                 className="text-gray-600 hover:text-gray-800 transition-colors"
@@ -17,6 +18,7 @@ function Header() {
                 Home
               </NavLink>
             </li>
+
             <li>
               <NavLink
                 to="/about"
@@ -50,5 +52,4 @@ function Header() {
     </header>
   );
 }
-
 export default Header;

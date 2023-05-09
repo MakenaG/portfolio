@@ -10,10 +10,10 @@ function Home() {
           alt="Profile"
           className="rounded-full mx-auto border-4 border-blue-600 animate__animated animate__bounceIn"
         />
-        <h1 className="text-4xl font-bold text-gray-800 mt-4 animate__animated animate__fadeInDown">
+        <h1 className="text-5xl font-bold text-gray-800 mt-4 animate__animated animate__fadeInDown">
           Hi, I’m Glory Makena 👋
         </h1>
-        <p className="text-xl text-gray-600 mt-4 animate__animated animate__fadeInUp">
+        <p className="text-2xl text-gray-600 mt-4 animate__animated animate__fadeInUp">
           I’m a full stack developer with experience in building modern web
           applications using React, Node.js, Ruby and more.
         </p>
@@ -65,6 +65,27 @@ function Home() {
               className="w-8 h-8 animate__animated animate__bounce"
             />
           </a>
+        </div>
+        {/* Replacing education background */}
+        <div className="mt-12 bg-green-100 p-6 rounded-lg shadow-lg">
+          <h2 className="text-4xl font-bold text-green-800">Education</h2>
+          <ul className="mt-4 space-y-2">
+            {/* Using information from user input */}
+            <li>Computer Science from Meru University (2017 - 2022)</li>
+            <li>Software Engineering from Moringa School (Nov 2022 - May 2023)</li>
+          </ul>
+        </div>
+        {/* Adding skills and achievements section */}
+        <div className="mt-12 bg-yellow-100 p-6 rounded-lg shadow-lg">
+          <h2 className="text-3xl font-bold text-yellow-800">Skills and Achievements</h2>
+          <ul className="mt-4 space-y-2 text-xl">
+            {/* Using information from user input */}
+            <li>Google Ads Marketing skills</li>
+            {/* Generating some achievements based on user profile */}
+            <li>Built and deployed several web applications using React, Node.js, Ruby and more</li>
+            <li>Contributed to open source projects on Github</li>
+           
+          </ul>
         </div>
       </div>
     </div>

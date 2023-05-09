@@ -23,7 +23,7 @@ function Projects() {
         title: "Recipe App",
         description: "A recipe app built with javascript and mealdbapi",
         image: "https://www.themealdb.com/images/media/meals/1529446352.jpg",
-        url: "gee-recipes.netlify.app",
+        url: "https://gee-recipes.netlify.app/",
       },
     {
       id: 4,
