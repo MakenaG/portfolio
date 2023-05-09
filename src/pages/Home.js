@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useDarkMode from "use-dark-mode";
 
 function Home() {
+    // Using use-dark-mode hook to toggle between themes
+  const darkMode = useDarkMode(false);
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="text-center">
@@ -66,6 +70,64 @@ function Home() {
             />
           </a>
         </div>
+        
+<div className="fixed top-4 right-4">
+  <button
+    onClick={darkMode.toggle}
+    className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg shadow-lg focus:outline-none focus:ring focus:ring-blue-600"
+  >
+    {darkMode.value ? (
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-6 w-6 text-gray-800 dark:text-gray-200"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M9.5 17h.21a10.12 10.12 0 008.18 0h.11m-.58-.91A9.05 9.05 0 0111 19.07M18.36 5.64A9.05 9.05 0 0113 4.93m5.37.71A10.02 10.02 0 0119.5 7h-.21a10.12 10.12 0 00-8.18 0H11m3.74-.32v-.4a9.05 9.05 0 014.64-1.94m1.06 1.06a9.05 9.05 0 012.83 3.16M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+    
+    ) : (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 text-gray-800 dark:text-gray-200"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 18h2m-2-8h2m4-4h2m2-2v2m-8-2v2M4-4h2m2-2v2m8-2v2M4-4h2m2-2v2m8-2v2M4-4h2m2-2v2m8-2v2M4-4h2m2-2v2m8-2v2M12
+          -6a6
+          -6
+          -6
+          -6
+          -6
+          -6
+          -6
+          -6
+          -6
+          -6
+          -6
+          -6
+          -6
+          -6
+          -6
+          -6z"
+        />
+      </svg>
+    )}
+    {/* Add this line to close the button tag */}
+    </button>
+</div>
+
       
 <div className="mt-12 bg-gray-100 p-6 rounded-lg shadow-lg">
   <h2 className="text-4xl font-bold text-gray-800">Education</h2>
