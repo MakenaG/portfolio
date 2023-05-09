@@ -40,7 +40,7 @@ function Contact() {
             <li>
               <span className="font-bold">Linkedin:</span>{" "}
               <a
-                href="https://www.linkedin.com/in/glorymakena/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BbN6STVWbSuqFGEeWWTSowQ%3D%3D"
+                href="https://wa.me/254701630746"
                 className="bg-green-500 text-white px-2 py-1 rounded hover:bg-green-50"
               >
                 +254701630746
