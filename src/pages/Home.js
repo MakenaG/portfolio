@@ -66,27 +66,83 @@ function Home() {
             />
           </a>
         </div>
-        {/* Replacing education background */}
-        <div className="mt-12 bg-green-100 p-6 rounded-lg shadow-lg">
-          <h2 className="text-4xl font-bold text-green-800">Education</h2>
-          <ul className="mt-4 space-y-2">
-            {/* Using information from user input */}
-            <li>Computer Science from Meru University (2017 - 2022)</li>
-            <li>Software Engineering from Moringa School (Nov 2022 - May 2023)</li>
-          </ul>
-        </div>
-        {/* Adding skills and achievements section */}
-        <div className="mt-12 bg-yellow-100 p-6 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold text-yellow-800">Skills and Achievements</h2>
-          <ul className="mt-4 space-y-2 text-xl">
-            {/* Using information from user input */}
-            <li>Google Ads Marketing skills</li>
-            {/* Generating some achievements based on user profile */}
-            <li>Built and deployed several web applications using React, Node.js, Ruby and more</li>
-            <li>Contributed to open source projects on Github</li>
-           
-          </ul>
-        </div>
+      
+<div className="mt-12 bg-gray-100 p-6 rounded-lg shadow-lg">
+  <h2 className="text-4xl font-bold text-gray-800">Education</h2>
+  <div className="mt-4 grid grid-cols-2 gap-4">
+    
+    <div className="bg-gray-200 p-4 rounded-lg">
+      <h3 className="text-2xl font-semibold text-gray-700">Computer Science</h3>
+      <p className="text-xl text-gray-600">Meru University</p>
+      <p className="text-lg text-gray-500">2017 - 2022</p>
+    </div>
+    <div className="bg-gray-200 p-4 rounded-lg">
+      <h3 className="text-2xl font-semibold text-gray-700">Software Engineering</h3>
+      <p className="text-xl text-gray-600">Moringa School</p>
+      <p className="text-lg text-gray-500">Nov 2022 - May 2023</p>
+    </div>
+  </div>
+</div>
+
+<div className="mt-12 bg-blue-100 p-6 rounded-lg shadow-lg">
+  <h2 className="text-4xl font-bold text-blue-800">Skills and Achievements</h2>
+  <ul className="mt-4 space-y-4 text-xl">
+   
+    <li className="flex items-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 mr-2 text-blue-600"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 13l4 4L19 7"
+        />
+      </svg>
+      Google Ads Marketing skills
+    </li>
+   
+    <li className="flex items-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 mr-2 text-blue-600"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 13l4 4L19 7"
+        />
+      </svg>
+      Built and deployed several web applications using React, Node.js, Ruby and more
+    </li>
+    <li className="flex items-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 mr-2 text-blue-600"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 13l4 4L19 7"
+        />
+      </svg>
+      Contributed to open source projects on Github
+    </li>
+  </ul>
+</div>
+
       </div>
     </div>
   );
