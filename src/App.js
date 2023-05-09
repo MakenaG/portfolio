@@ -1,16 +1,37 @@
-import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Portfolio from './components/Portfolio';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
-const App = () => {
+function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Header />
-      <Portfolio />
-      <Footer />
-    </div>
+    <Router>
+      <div className="flex flex-col min-h-screen bg-gray-100">
+        <Header />
+        <main className="flex-1">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+          </Switch>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
-};
+}
 
 export default App;
