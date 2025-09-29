@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+>>>>>>> 182c5f1 (Update homepage, add achievements, CV, and profile image)
 
 body {
   margin: 0;

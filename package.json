@@ -2,7 +2,14 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
+<<<<<<< HEAD
   "homepage": "https://makenag.github.io/portfolio",
+=======
+>>>>>>> 660a3b6078f3529f90e00a08d867aae5c0065555
+=======
+  "homepage": "https://makenag.github.io/portfolio",
+>>>>>>> 182c5f1 (Update homepage, add achievements, CV, and profile image)
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -19,9 +26,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+<<<<<<< HEAD
+<<<<<<< HEAD
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+=======
+    "eject": "react-scripts eject"
+>>>>>>> 660a3b6078f3529f90e00a08d867aae5c0065555
+=======
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+>>>>>>> 182c5f1 (Update homepage, add achievements, CV, and profile image)
   },
   "eslintConfig": {
     "extends": [
@@ -42,8 +59,19 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
+<<<<<<< HEAD
     "gh-pages": "^6.3.0",
+=======
+>>>>>>> 660a3b6078f3529f90e00a08d867aae5c0065555
+=======
+    "gh-pages": "^6.3.0",
+>>>>>>> 182c5f1 (Update homepage, add achievements, CV, and profile image)
     "postcss-cli": "^10.1.0",
     "tailwindcss": "^3.3.2"
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 182c5f1 (Update homepage, add achievements, CV, and profile image)
